@@ -41,5 +41,3 @@ shortuuid
 tiktoken
 uvicorn
 vdms==0.0.21
--i https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple
-langchain-vdms>=0.1.0
