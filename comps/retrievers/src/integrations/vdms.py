@@ -63,12 +63,12 @@ class OpeaVDMsRetriever(OpeaComponent):
     def _initialize_vector_db(self) -> VDMS:
         """Initializes the vdms client."""
         if VDMS_USE_CLIP:
-            dimensions = self.embedder.get_embedding_length()
+            # dimensions = self.embedder.get_embedding_length()
             vector_db = VDMS(
                 client=self.client,
                 embedding=self.embedder,
                 collection_name=VDMS_INDEX_NAME,
-                embedding_dimensions=dimensions,
+                # embedding_dimensions=dimensions,
                 distance_strategy=DISTANCE_STRATEGY,
                 engine=SEARCH_ENGINE,
             )
